@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import reshotIconSend from "./LiensPictures/send.svg";
 import guideMusE1 from "./LiensPictures/GuideMusée.webp";
 import patisserie21 from "./LiensPictures/Patisserie2.webp";
-import Sparks from "./LiensPictures/sparkles.PNG"
+import Sparks from "./LiensPictures/sparkles.png"
 import EmailValidationPopup from "../EmailValidationPopup/EmailValidationPopup";
 import EmailErrorPopup from "../EmailValidationPopup/EmailErrorPopup";
 import handDown from "./LiensPictures/hand-down.png";

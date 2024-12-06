@@ -3,16 +3,16 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import './Carousel.css';  
 
-import image1 from '../../../public/CarouselPicture/caverne.webp';
-import image2 from '../../../public/CarouselPicture/PhotoCave.webp';
-import image3 from '../../../public/CarouselPicture/PhotoNeige.webp';
-import image4 from '../../../public/CarouselPicture/GuideVille.webp';
-import image5 from '../../../public/CarouselPicture/GuideVille2.webp';
-import image6 from '../../../public/CarouselPicture/GuideNocturne.webp';
-import image7 from '../../../public/CarouselPicture/Patisserie 3.webp';
-import image8 from '../../../public/CarouselPicture/MurjtmParis.webp';
-import image9 from '../../../public/CarouselPicture/guidePanier.webp';
-import image10 from '../../../public/CarouselPicture/conteur.webp';
+import image1 from './CarouselPicture/caverne.webp';
+import image2 from './CarouselPicture/PhotoCave.webp';
+import image3 from './CarouselPicture/PhotoNeige.webp';
+import image4 from './CarouselPicture/GuideVille.webp';
+import image5 from './CarouselPicture/GuideVille2.webp';
+import image6 from './CarouselPicture/GuideNocturne.webp';
+import image7 from './CarouselPicture/Patisserie 3.webp';
+import image8 from './CarouselPicture/MurjtmParis.webp';
+import image9 from './CarouselPicture/guidePanier.webp';
+import image10 from './CarouselPicture/conteur.webp';
 
 const CarouselComponent = () => {
   const settings = {

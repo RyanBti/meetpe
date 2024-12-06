@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import reshotIconSend from "./LiensPictures/send.svg";
-import guideMusE1 from "./LiensPictures/GuideMusée.webp";
-import patisserie21 from "./LiensPictures/Patisserie2.webp";
+import reshotIconSend from "../../../public/LiensPictures/send.svg";
+import guideMusE1 from "../../../public/LiensPictures/GuideMusée.webp";
+import patisserie21 from "../../../public/LiensPictures/Patisserie2.webp";
 import Sparks from "./LiensPictures/sparkles.png"
 import EmailValidationPopup from "../EmailValidationPopup/EmailValidationPopup";
 import EmailErrorPopup from "../EmailValidationPopup/EmailErrorPopup";

@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import desktopBackground from "./Pictures/FondMeetpeDesktop.webp";
-import mobileBackground from "./Pictures/FondMeetpeMobile.png";
-import logotype from "./Pictures/logomeetpeople.png";
-import Gplay from "./Pictures/Gplay.svg";
-import Appstore from "./Pictures/appstore.svg";
+import desktopBackground from "../../../public/Pictures/FondMeetpeDesktop.png";
+import mobileBackground from "../../../public/Pictures/FondMeetpeMobile.png";
+import logotype from "../../../public/Pictures/logomeetpeople.png";
+import Gplay from "../../../public/Pictures/Gplay.svg";
+import Appstore from "../../../public/Pictures/appstore.svg";
 import "./ComingSoon.css";
 
 export const Construction = () => {

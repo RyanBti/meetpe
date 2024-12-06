@@ -1,0 +1,171 @@
+/* Conteneur principal */
+.carousel-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: #EDD8BE;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Fond avec masque */
+.background-mask {
+    width: 100%;
+    padding: 50px 0;
+    background: linear-gradient(90deg, rgba(255, 76, 0, 1) 45%, rgba(254, 168, 85, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mask-left,
+.mask-right {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 600px;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.mask-left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 76, 0, 1) 0%, rgba(255, 76, 0, 0) 100%);
+}
+
+.mask-right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 76, 0, 1) 0%, rgba(255, 76, 0, 0) 100%);
+}
+
+/* Conteneur des images */
+.background {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Images latérales */
+.left-photo {
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(-100vw); /* Hors écran à gauche */
+    transition: transform 1.5s ease, opacity 1.5s ease; /* Transition ralentie */
+}
+
+.right-photo {
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateX(100vw); /* Hors écran à droite */
+    transition: transform 1.5s ease, opacity 1.5s ease; /* Transition ralentie */
+}
+
+.background.animate .left-photo {
+    opacity: 1;
+    transform: translateX(0); /* Rejoint le centre */
+}
+
+.background.animate .right-photo {
+    opacity: 1;
+    transform: translateX(0); /* Rejoint le centre */
+}
+
+/* Image centrale */
+.center-photo {
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-50px); /* Décalé vers le haut */
+    transition: opacity 1s ease, transform 1s ease; /* Transition standard */
+}
+
+.background.animate .center-photo {
+    opacity: 1;
+    transform: translateY(0); /* Retourne à sa position normale */
+}
+
+/* Keyframes pour animations avancées */
+@keyframes sideMoveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sideMoveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes centerFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adaptations pour Responsive Design */
+
+/* Tablettes */
+@media (max-width: 768px) {
+    .left-photo,
+    .right-photo,
+    .center-photo {
+        width: 120px;
+        height: 240px;
+    }
+
+    .background {
+        gap: 10px;
+    }
+
+    .mask-left,
+    .mask-right {
+        width: 150px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 480px) {
+    .left-photo,
+    .right-photo,
+    .center-photo {
+        width: 80px;
+        height: 160px;
+    }
+
+    .background {
+        gap: 5px;
+    }
+
+    .mask-left,
+    .mask-right {
+        width: 50px;
+    }
+}

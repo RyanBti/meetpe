@@ -1,0 +1,83 @@
+@keyframes slideUpFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideDownFadeOut {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+  
+  .container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .fadeIn {
+    animation: slideUpFadeIn 0.4s ease forwards;
+  }
+  
+  .fadeOut {
+    animation: slideDownFadeOut 0.4s ease forwards;
+  }
+  
+  .popup {
+    background-color: #edd8be;
+    color: #333;
+    padding: 0;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    font-size: 1em;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .header {
+    background-color: #ff4c00;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  .headerText {
+    font-size: 1em;
+    font-weight: 600;
+  }
+  
+  .icon {
+    color: #FF0000;
+    margin-left: 8px;
+  }
+  
+  .message {
+    margin: 15px;
+    color: #333;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+  

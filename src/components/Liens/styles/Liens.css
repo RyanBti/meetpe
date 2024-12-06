@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&family=Outfit:wght@400;700&display=swap');
+
+.hand{
+  width: 30px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+/* Conteneur principal */
+.accroche-form {
+  position: relative;
+  background: #EDD8BE;
+  width: 100%;
+  height: auto; /* S'adapte au contenu */
+  display: flex;
+  justify-content: space-between; /* Aligne les éléments horizontalement */
+  align-items: flex-start; /* Aligne les éléments sur la même ligne */
+  padding: 40px 20px; /* Ajout d'espacement */
+  box-sizing: border-box;
+}
+
+/* Images gauche et droite */
+.image-muse,
+.image-patisserie {
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.image-muse .img,
+.image-patisserie .img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px; /* Espacement entre image et texte */
+}
+
+/* Texte des images */
+.image-muse .text-wrapper,
+.image-patisserie .text-wrapper {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #000000;
+  line-height: 18px;
+  margin-top: 10px;
+}
+
+/* Contenu central */
+.content-center {
+  max-width: 800px;
+  flex: 1; /* Prend tout l'espace disponible */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px; /* Équilibre l'espacement horizontal */
+}
+
+/* Guides */
+.guides {
+  margin-bottom: 20px;
+}
+
+.guides .text-wrapper {
+  font-family: "Outfit", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #1d1d1d;
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+}
+
+.guides .overlap-group {
+  background-color: var(--primaryvitamine-orange);
+  border-radius: 40px;
+  padding: 0px 10px;
+  margin-top: 15px;
+  display: inline-block;
+}
+.guides .overlap-group:hover {
+  background-color: var(--primaryorange-light);
+  border-radius: 40px;
+  padding: 0px 10px;
+  display: inline-block;
+}
+
+.guides .button-text {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Newsletter */
+.newsletter {
+  margin-top: 20px;
+}
+
+.newsletter .envie-d-tre-parmi {
+  font-family: "Outfit", Helvetica;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 20px;
+  color: #1d1d1d;
+}
+
+.newsletter .subscribe-text {
+  font-size: 22px;
+  margin-top: 15px;
+  display: inline-block;
+  
+  font-family: "Rammetto One", sans-serif;
+}
+.newsletter .overlap-wrapper {
+  position: relative;
+  width: 320px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.newsletter .overlap {
+  background-color: var(--primaryvitamine-orange);
+  border-radius: 40px;
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter .mail-button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.newsletter .subscribe-text {
+  font-size: 22px;
+  margin-top: 15px;
+  display: inline-block;
+  font-family: "Outfit", Helvetica; ;
+}
+.newsletter .input-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: calc(100% - 40px);
+  height: 30px;
+  background-color: var(--primarybeige);
+  border-radius: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter .email-placeholder {
+  font-family: "Outfit", Helvetica;
+  font-size: 12px;
+  color: #ff4c0080;
+}
+
+.newsletter .reshot-icon-send {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Formulaire newsletter */
+.newsletter form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.newsletter input.email-placeholder {
+  font-family: "Outfit", Helvetica;
+  background-color: transparent;
+  font-size: 14px;
+  color: #000;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.newsletter input.email-placeholder:focus {
+  outline: none;
+  border: none; 
+  box-shadow: none; 
+}
+.newsletter button.reshot-icon-send {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.newsletter .message {
+  margin-top: 10px;
+  font-family: "Outfit-Regular", Helvetica;
+  font-size: 12px;
+  color: green;
+}
+
+.newsletter button.reshot-icon-send img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .accroche-form {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    text-align: center;
+  }
+
+  /* Cache les sections d'images gauche et droite */
+  .image-muse,
+  .image-patisserie {
+    display: none;
+  }
+
+  /* Centrer et réduire les dimensions */
+  .content-center {
+    width: 100%;
+    padding: 20px 10px;
+  }
+
+  .guides .text-wrapper {
+    font-size: 16px; /* Réduit la taille pour mobile */
+    line-height: 1.5;
+  }
+
+  .guides .button-text {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .newsletter .subscribe-text {
+    font-size: 16px;
+    margin-top: 5px;
+    display: inline-block;  }
+
+  .newsletter .envie-d-tre-parmi {
+    font-size: 16px; /* Plus lisible sur mobile */
+    padding-bottom: 10px;
+  }
+
+  .newsletter .overlap-wrapper {
+    width: 100%;
+    max-width: 280px; /* Limite la largeur sur mobile */
+    margin: 0 auto;
+  }
+
+  .newsletter .email-placeholder {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  .newsletter .reshot-icon-send {
+    width: 20px;
+    height: 20px;
+  }
+
+  .newsletter .message {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+}

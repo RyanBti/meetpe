@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import desktopBackground from "./Pictures/FondMeetpeDesktop.webp";
+import desktopBackground from "./Pictures/FondMeetpeDesktop.png";
 import mobileBackground from "./Pictures/FondMeetpeMobile.png"; 
 import logotype from "./Pictures/logomeetpe.png"; 
 import Gplay from "./Pictures/Gplay.svg";

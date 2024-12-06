@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import desktopBackground from "./Pictures/FondMeetpeDesktop.webp";
 import mobileBackground from "./Pictures/FondMeetpeMobile.png";
-import logotype from "./Pictures/logomeetpe.png";
+import logotype from "./Pictures/logomeetpeople.png";
 import Gplay from "./Pictures/Gplay.svg";
 import Appstore from "./Pictures/appstore.svg";
 import "./ComingSoon.css";

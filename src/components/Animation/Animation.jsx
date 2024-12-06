@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Animation.css';
 
-import meetpeLogo from './AnimationPicture/AppMeetPeLogo.webp';
-import meetpeUser from './AnimationPicture/AppMeetPeUser.webp';
-import meetpeExp from './AnimationPicture/AppMeetPeExp.webp';
-import meetPeMatch from './AnimationPicture/AppMeetPeMatch.webp';
-import meetPeCreate from './AnimationPicture/AppMeetPeCreate.webp';
+import meetpeLogo from '../../../public/images/AnimationPicture/AppMeetPeLogo.webp';
+import meetpeUser from '../../../public/images/AnimationPicture/AppMeetPeUser.webp';
+import meetpeExp from '../../../public/images/AnimationPicture/AppMeetPeExp.webp';
+import meetPeMatch from '../../../public/images/AnimationPicture/AppMeetPeMatch.webp';
+import meetPeCreate from '../../../public/images/AnimationPicture/AppMeetPeCreate.webp';
 
 function Animation() {
     const animationRef = useRef(null); // Référence pour le conteneur

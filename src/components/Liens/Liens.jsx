@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import reshotIconSend from "./LiensPictures/send.svg";
-import guideMusE1 from "./LiensPictures/GuideMusée.webp";
-import patisserie21 from "./LiensPictures/Patisserie2.webp";
-import Sparks from "./LiensPictures/sparkles.png"
+import reshotIconSend from "../../../public/images/LiensPictures/send.svg";
+import guideMusE1 from "../../../public/images/LiensPictures/GuideMusée.webp";
+import patisserie21 from "../../../public/images/LiensPictures/Patisserie2.webp";
+import Sparks from "../../../public/images/LiensPictures/sparkles.png"
 import EmailValidationPopup from "../EmailValidationPopup/EmailValidationPopup";
 import EmailErrorPopup from "../EmailValidationPopup/EmailErrorPopup";
-import handDown from "./LiensPictures/hand-down.png";
+import handDown from "../../../public/images/LiensPictures/hand-down.png";
 import "./styles/Liens.css";
 import "./styles/styleguide.css";
 

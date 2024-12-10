@@ -1,41 +1,19 @@
 import React from 'react';
-import { Animation, Carousel, Liens, MessageSection, ScrollSection, ComingSoon, FooterMeetpe } from './components';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import PrivacyPolicyPage from './pages/PrivacyPolicy';
 
 const App = () => {
     return (
-        <div>
+        <Router>
+            <Routes>
+                {/* Route pour la page d'accueil */}
+                <Route path="/" element={<Home />} />
 
-            {/* Sections */}
-            <div id="ComingSoon">
-                <ComingSoon />
-            </div>
-
-            <div id="liens">
-                <Liens />
-            </div>
-
-            <div id="carousel">
-                <Carousel />
-            </div>
-
-            <div id="scroll-section">
-                <ScrollSection />
-            </div>
-            
-            <div id="animation">
-                <Animation />
-            </div>
-
-            <div id="message-section">
-
-                <MessageSection />
-            </div>
-
-            <div id="FooterMeetPe">
-
-                <FooterMeetpe />
-            </div>
-        </div>
+                {/* Route pour la politique de confidentialité */}
+                <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+            </Routes>
+        </Router>
     );
 };
 

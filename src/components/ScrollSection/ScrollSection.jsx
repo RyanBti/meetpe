@@ -20,7 +20,7 @@ const sections = [
   },
   {
     id: 4,
-    title: " 4. La cerise sur le gâteau",
+    title: " 4. La Cerise Sur Le Gâteau",
     content: "Toutes ces rencontres, ces histoires et ces expériences sont pensées spécialement pour toi, en fonction de ce qui te fait vibrer ! Plus besoin de passer des heures à chercher les pépites de ta destination : on apprend à te connaître pour te proposer des moments de vie qui te ressemblent, et te connecter avec ceux qui partagent tes passions."
   },
 ];

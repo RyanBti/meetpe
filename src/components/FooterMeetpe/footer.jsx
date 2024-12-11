@@ -1,9 +1,10 @@
-import React from "react";
-import styles from "./footer.module.css"; // Correction du chemin ("/" en "./")
-import facebookIcon from "./socialPic/facebook.svg";
-import instagramIcon from "./socialPic/Insta.svg";
-import tiktokIcon from "./socialPic/tiktok.svg";
-import logoMeetPe from "./socialPic/LogoMeetpeBlack.svg";
+import { Link } from 'react-router-dom';
+import React from 'react';
+import styles from './footer.module.css';
+import facebookIcon from './socialPic/facebook.svg';
+import instagramIcon from './socialPic/Insta.svg';
+import tiktokIcon from './socialPic/tiktok.svg';
+import logoMeetPe from './socialPic/LogoMeetpeBlack.svg';
 
 function FooterMeetP() {
   return (
@@ -27,13 +28,16 @@ function FooterMeetP() {
           <img src={logoMeetPe} alt="Logo MeetPe" className={styles.logo} />
         </div>
 
-        {/* Adresse email */}
+        {/* Adresse email et politique de confidentialité */}
         <div className={styles.contactSection}>
           <p className={styles.contact}>contact@meetpe.fr</p>
+          <Link to="/privacy-policy" className={styles.privacyLink}>
+            Politique de confidentialité
+          </Link>
         </div>
       </div>
     </footer>
   );
 }
 
-export default FooterMeetP;
+export default FooterMeetP

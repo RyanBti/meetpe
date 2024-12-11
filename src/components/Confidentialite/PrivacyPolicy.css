@@ -1,0 +1,138 @@
+/* Conteneur principal */
+.privacy-container {
+    font-family: 'Outfit', sans-serif;
+    padding: 20px;
+    background-color: #E8D3BA;
+    /* Fond légèrement plus sombre */
+    color: #222;
+    /* Texte légèrement plus sombre */
+}
+
+/* Logo */
+.privacy-logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    /* Espacement sous le logo */
+}
+
+.privacy-logo {
+    width: 120px;
+    /* Taille du logo */
+    height: auto;
+}
+
+/* Titre principal */
+.privacy-title {
+    text-align: center;
+    color: #FF4500;
+    /* Orange vif pour le titre principal */
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Rammetto One', sans-serif;
+}
+
+/* Sections */
+.privacy-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* Espacement entre les sections */
+}
+
+.privacy-section {
+    background: #FFFFFF;
+    /* Fond blanc pour les sections */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #FF4500;
+    /* Accent orange sur le côté */
+    margin: 20px 0;
+    /* Espacement vertical */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.privacy-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Titres des sections */
+.privacy-section-title {
+    color: #FF4500;
+    /* Orange vif */
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Rammetto One', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.privacy-section-title:hover {
+    color: #e63900;
+    /* Une nuance plus foncée d'orange */
+    cursor: pointer;
+}
+
+/* Contenu des sections */
+.privacy-section-content {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #222;
+}
+
+a {
+    color: #e63900;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff4500;
+    /* Couleur au survol */
+}
+
+/* Bouton de retour en haut */
+.back-to-top {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-to-top a {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    color: #FF4500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-top a:hover {
+    color: #e63900;
+    /* Couleur au survol */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .privacy-title {
+        font-size: 2rem;
+    }
+
+    .privacy-section-title {
+        font-size: 1.5rem;
+    }
+
+    .privacy-section-content {
+        font-size: 0.9rem;
+    }
+
+    .privacy-logo {
+        width: 80px;
+        /* Réduction de la taille du logo sur mobile */
+    }
+
+    .privacy-section {
+        padding: 15px;
+    }
+}

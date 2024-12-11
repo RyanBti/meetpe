@@ -6,3 +6,4 @@ export { default as MessageSection } from './MessageSection/MessageSection';
 export { default as ScrollSection } from './ScrollSection/ScrollSection';
 export { default as ComingSoon } from './ComingSoon/ComingSoon';
 export { default as FooterMeetpe } from './FooterMeetpe/footer';
+export { default as PrivacyPolicy} from './Confidentialite/PrivacyPolicy';
